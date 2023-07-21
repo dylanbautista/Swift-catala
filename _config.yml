@@ -5,8 +5,14 @@ timezone: America/Lower_Princes
 exclude: ["README.md", "config.ru", "Gemfile", "Gemfile.lock", "Procfile", "vendor"]
 safe: true
 future: true
+incremental: false
+highliter: rouge
+lsi: false
+gist:
+    noscript: false
 
 kramdown:
+    math_engine: mathjax
     syntax_highlighter: rouge
 
 sass:
@@ -21,7 +27,7 @@ defaults:
             permalink: /blog/:title/
             layout: "post"
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 whitelist:
